@@ -24,21 +24,14 @@ let favoriteSite = {
 function App() {
   return (
     <>
-      {/* 1 */}
       <h1>{name}</h1>
-
-      {/* 3 */}
       <p>Ласкаво просимо до нашого сайту!</p>
-      {/* 4 */}
       <img src={viteLogo} alt={alt} />
-      {/*5 */}
       <a href={favoriteSite.url}>{favoriteSite.site}</a>
-      {/* 6 */}
       <p>{number1} + {number2} = {total}</p>
-      {/* 7 */}
-<ul>
-      {colors.map(color => (<li key={color.id}>{color.name}</li>))}
-</ul>
+      <ul>
+        {colors.map(color => (<li key={color.id}>{color.name}</li>))}
+      </ul>
     </>
   )
 }
